@@ -1,7 +1,7 @@
 {
   "name": "vscode-mat-palette",
   "displayName": "Material Design Palette Generator",
-  "description": "",
+  "description": "Generate a material color palette within VSCode",
   "version": "1.0.0",
   "publisher": "piyush-bhatt",
   "author": {
@@ -30,7 +30,7 @@
   ],
   "icon": "assets/images/icon_logo.png",
   "activationEvents": [
-    "onCommand:vscode-mat-palette.openPaletteGenerator"
+    "onStartupFinished"
   ],
   "main": "./dist/extension.js",
   "contributes": {

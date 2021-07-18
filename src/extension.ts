@@ -1,9 +1,11 @@
 import * as vscode from 'vscode';
 import { setContext } from './context';
-import ViewLoader from './webview/ViewLoader';
+import { createStatusBarItem } from './statusBar';
+import { ViewLoader } from './webview';
 
 export function activate(context: vscode.ExtensionContext) {
   setContext(context);
+  createStatusBarItem();
   const disposable = vscode.commands.registerCommand('vscode-mat-palette.openPaletteGenerator', () => {
     new ViewLoader();
   });
