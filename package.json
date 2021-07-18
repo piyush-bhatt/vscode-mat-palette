@@ -2,13 +2,33 @@
   "name": "vscode-mat-palette",
   "displayName": "Material Design Palette Generator",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "piyush-bhatt",
+  "author": {
+    "name": "Piyush Bhatt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piyush-bhatt/vscode-mat-palette"
+  },
+  "bugs": {
+    "url": "https://github.com/piyush-bhatt/vscode-mat-palette/issues"
+  },
+  "homepage": "https://github.com/piyush-bhatt/vscode-mat-palette#readme",
+  "license": "SEE LICENSE IN LICENSE",
   "engines": {
-    "vscode": "^1.58.0"
+    "vscode": "^1.52.0"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "color",
+    "color palette",
+    "material palette",
+    "material design"
+  ],
+  "icon": "assets/images/icon_logo.png",
   "activationEvents": [
     "onCommand:vscode-mat-palette.openPaletteGenerator"
   ],
@@ -17,7 +37,7 @@
     "commands": [
       {
         "command": "vscode-mat-palette.openPaletteGenerator",
-        "title": "Open Material Design Palette Generator"
+        "title": "Material Design Palette Generator"
       }
     ]
   },
