@@ -42,4 +42,4 @@ Icon is made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.f
 
 ## License
 
-[MIT](https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/main/LICENSE) licensed.
+[MIT](https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/LICENSE) licensed.
