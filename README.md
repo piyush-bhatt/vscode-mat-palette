@@ -4,6 +4,12 @@
 
 > [Material Design Palette Generator](https://marketplace.visualstudio.com/items?itemName=piyush-bhatt.vscode-mat-palette) is a VSCode extension to generate a [material color palette](https://material.io/design/color/the-color-system.html#tools-for-picking-colors) within VSCode itself.
 
+## Usage
+
+There are a couple of ways to launch the material design palette generator
+1. Execute **`Material Design Palette Generator`** command from the VSCode command palette
+2. Click on the **`Material Palette`** icon in the status bar (bottom gutter)
+
 ## Features
 
 ### Get a full color palette generated from a given hex color
