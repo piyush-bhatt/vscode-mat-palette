@@ -1,0 +1,383 @@
+/*
+Just some local overrides so Google's original stylesheet (main.css) can remain unedited.
+*/
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--vscode-editor-foreground);
+}
+
+code {
+  font-family: Consolas, monospace;
+  font-size: 85%;
+  background: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.palettes {
+  /* footer is ~71px high */
+  min-height: calc(100vh - 71px);
+}
+
+.color-tool {
+  max-width: none;
+  padding: 200px 40px 60px;
+}
+
+.tool-title {
+  display: none;
+}
+
+.page-content {
+  position: relative;
+  top: 100px;
+  padding: 0 40px;
+}
+
+.page-title {
+  font-size: 36px;
+  height: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.page-title a {
+  color: var(--vscode-editor-foreground);
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.page-title a:active,
+.page-title a:focus,
+.page-title a:hover {
+  text-decoration: underline;
+}
+
+.page-messaging {
+  margin-top: 60px;
+  font-weight: normal;
+  padding-bottom: 40px;
+  max-width: 680px;
+  line-height: 1.4;
+}
+
+.page-messaging h2 {
+  font-weight: 500;
+  margin: 15px 0;
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.page-messaging-title {
+  font-size: 120px;
+  font-weight: bold;
+  animation: rotate 120s linear infinite;
+  display: inline-block;
+  margin: 25px 0;
+}
+
+.page-messaging-subtitle {
+  font-size: 20px;
+}
+
+.screenshot {
+  margin-top: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.standard-link,
+.page-messaging a {
+  color: #007c6e;
+}
+
+.standard-link:active,
+.standard-link:focus,
+.standard-link:hover,
+.page-messaging a:active,
+.page-messaging a:focus,
+.page-messaging a:hover {
+  text-decoration: none;
+}
+
+.color-palette__label,
+.color-palette__color-weight-label {
+  color: var(--vscode-editor-foreground);
+}
+
+.color-palette__color-weight-label {
+  max-width: 64px;
+}
+
+.utility-panel {
+  right: 20px;
+  top: 20px;
+  height: 120px;
+  position: absolute;
+  width: 240px;
+}
+
+.utility-panel .content__info {
+  display: none;
+}
+
+.utility-panel {
+  right: auto;
+  left: 40px;
+}
+
+.color-picker-panel {
+  top: 20px;
+  left: 300px;
+  position: absolute;
+}
+
+.utility-panel__label {
+  cursor: default;
+}
+
+.utility-panel__label i {
+  display: none;
+}
+
+.color-palette__color-weight-label {
+  font-family: Courier, monospace;
+}
+
+.color-palette__cell-hex-value {
+  text-transform: lowercase;
+  left: auto;
+}
+
+.clipboard-confirmation {
+  transform: translateY(200px);
+  animation: none;
+  height: auto;
+  padding: 5px 25px;
+  text-align: center;
+  width: 220px;
+}
+
+.clipboard-confirmation--visible {
+  animation: fadein 250ms linear;
+  transform: translateY(-20px);
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+.page-footer {
+  padding: 0 40px 60px;
+  font-weight: 500;
+}
+
+.page-footer.footer-alt {
+  padding-left: 0;
+}
+
+.page-footer p {
+  margin-top: 0;
+}
+
+.page-footer a:first-child {
+  margin-right: 25px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  padding: 15px;
+}
+
+.modal-content {
+  background-color: var(--vscode-editor-background);
+  margin: 50px auto 0;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 4px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-weight: 500;
+  color: var(--vscode-editor-foreground);
+}
+
+.modal-content .close {
+  color: var(--vscode-editor-foreground);
+  background: none;
+  border: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: -4px;
+}
+
+.modal-content .close i {
+  font-size: 36px;
+}
+
+.modal-content textarea {
+  resize: none;
+  width: 100%;
+  height: 60vh;
+  font-size: 16px;
+  line-height: 1.4;
+  border: 1px solid var(--vscode-editor-foreground);
+  border-radius: 4px;
+  color: var(--vscode-editor-foreground);
+  background-color: var(--vscode-editor-background);
+  padding: 10px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.exportContainer {
+  position: absolute;
+  top: 60px;
+  left: 620px;
+  cursor: pointer;
+}
+
+.icon-file-export {
+  stroke: var(--vscode-editor-foreground);
+}
+
+.icon-file-export:active,
+.icon-file-export:focus,
+.icon-file-export:hover {
+  stroke: var(--vscode-textLink-foreground);
+}
+
+@media screen and (max-width: 1000px) {
+  .color-tool {
+    display: block;
+    padding: 200px 20px 60px;
+  }
+
+  .page-content {
+    padding: 0 20px;
+    top: 165px;
+  }
+
+  .page-content.sub-page {
+    top: 80px;
+  }
+
+  .page-title {
+    font-size: 32px;
+    height: auto;
+  }
+
+  .page-messaging {
+    margin-top: 20px;
+  }
+
+  .mobile-message {
+    display: none;
+  }
+
+  .utility-panel {
+    left: 20px;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: var(--vscode-editor-background);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .exportContainer {
+    left: 525px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .exportContainer {
+    left: 475px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .color-tool {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .utility-panel {
+    left: 10px;
+    width: 220px;
+  }
+
+  .exportContainer {
+    left: 425px;
+  }
+
+  .page-content {
+    padding: 0 10px;
+  }
+
+  .modal-content {
+    margin-top: 0;
+    height: 100%;
+  }
+
+  .modal-content textarea {
+    height: 100%;
+  }
+
+  .modal-text {
+    height: calc(100% - 60px);
+  }
+}
