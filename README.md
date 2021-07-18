@@ -1,18 +1,34 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/images/icon_logo.png" alt="Material Palette Logo" /></a>
+  <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/images/icon_logo.png" height="128px" width="128px" alt="Material Palette Logo" /></a>
 </p>
 
 > [Material Design Palette Generator](https://marketplace.visualstudio.com/items?itemName=piyush-bhatt.vscode-mat-palette) is a VSCode extension to generate a [material color palette](https://material.io/design/color/the-color-system.html#tools-for-picking-colors) within VSCode itself.
 
 ## Features
 
-\!\[Get a full color palette generated from a given hex color\]\(https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/readme/Primary.gif\)
+### Get a full color palette generated from a given hex color
 
-\!\[Get complementary colors based on the provided primary color\]\(https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/readme/Complementary.gif\)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/readme/Primary.gif" alt="Get a full color palette generated from a given hex color" />
+</p>
 
-\!\[Get secondary color palette based on the provided secondary color\]\(https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/readme/Secondary.gif\)
+### Get complementary colors based on the provided primary color
 
-\!\[Get the generated palettes in a JSON format to export\]\(https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/readme/Export.gif\)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/readme/Complementary.gif" alt="Get complementary colors based on the provided primary color" />
+</p>
+
+### Get secondary color palette based on the provided secondary color
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/readme/Secondary.gif" alt="Get secondary color palette based on the provided secondary color" />
+</p>
+
+### Get the generated palettes in a JSON format to export
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/piyush-bhatt/vscode-mat-palette/master/assets/readme/Export.gif" alt="Get the generated palettes in a JSON format to export" />
+</p>
 
 > The palettes generated are based on Material Design standards, and use Google's algorithm for color derivation.
 
